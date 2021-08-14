@@ -1,6 +1,6 @@
 from flask import *
 import pymysql as p
-from DBMS import insertData,getConnection,selectAllStd,deleteData,selectStdById,updateData,
+from DBMS import insertData,getConnection,selectAllStd,deleteData,selectStdById,updateData, url_for
 import email
 
 f=Flask(__name__)
