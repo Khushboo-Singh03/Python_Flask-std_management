@@ -1,0 +1,252 @@
+<html>  
+<head>  
+	<title> Registration Form</title> 
+
+	<style>
+		*
+		{
+		margin:0;
+		padding: 0%;
+		}
+		body
+		{
+		max-width: 1200px;
+		font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+		margin:auto;
+		box-sizing: border-box;
+		display: fixed;
+		
+		}
+		nav
+		{
+		position: relative;
+		width: 100%;
+		height: 100px;
+		background: transparent;
+		}
+		nav .logo
+		{
+		float: left;
+		width:50px;
+		height: 50px;
+		font-size:26px;
+		text-transform: uppercase;
+		font-weight:bolder;
+		color: rgb(16, 6, 49);
+		padding:30px 0px 30px 0px;
+		}
+		nav ul
+		{
+		padding-right:40px;
+		list-style-type: none;
+		float: right;
+		margin: 7px 0px 10px 0px;
+			
+		}
+		nav ul li
+		{
+			display: inline-block;
+			
+		}
+		h1{
+			color:  #EB3B88;
+		}
+		a{
+		text-decoration: none
+		}
+		nav ul li a
+		{
+		text-decoration: none;
+		padding: 10px 40px 8px 40px ;
+		text-align: center;
+		color:  #EB3B88;
+		display: inline-block;
+		font-weight: 700;
+		text-transform: uppercase;
+		}
+		nav ul li a:hover
+		{
+		background:#F072A9;
+		color:white;
+		border-radius: 20px;
+		}
+.form-std{
+	max-width: 500px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	margin:auto;
+}
+.form-std label{
+	display:block;
+	margin-bottom: 10px;
+}
+.form-std label > span{
+	float: left;
+	width: 100px;
+	color: #F072A9;
+	font-weight: bold;
+	font-size: 13px;
+	text-shadow: 1px 1px 1px #fff;
+}
+.form-std fieldset{
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	margin: 0px 0px 10px 0px;
+	border: 1px solid #FFD2D2;
+	padding: 20px;
+	background: #FFF4F4;
+	box-shadow: inset 0px 0px 15px #FFE5E5;
+	-moz-box-shadow: inset 0px 0px 15px #FFE5E5;
+	-webkit-box-shadow: inset 0px 0px 15px #FFE5E5;
+}
+.form-std fieldset legend{
+	color: #FFA0C9;
+	border-top: 1px solid #FFD2D2;
+	border-left: 1px solid #FFD2D2;
+	border-right: 1px solid #FFD2D2;
+	border-radius: 5px 5px 0px 0px;
+	-webkit-border-radius: 5px 5px 0px 0px;
+	-moz-border-radius: 5px 5px 0px 0px;
+	background: #FFF4F4;
+	padding: 0px 8px 3px 8px;
+	box-shadow: -0px -1px 2px #F1F1F1;
+	-moz-box-shadow:-0px -1px 2px #F1F1F1;
+	-webkit-box-shadow:-0px -1px 2px #F1F1F1;
+	font-weight: normal;
+	font-size: 12px;
+}
+.form-std textarea{
+	width:250px;
+	height:100px;
+}
+.form-std input[type=text],
+.form-std input[type=date],
+.form-std input[type=datetime],
+.form-std input[type=password],
+.form-std input[type=number],
+.form-std input[type=time],
+.form-std input[type=email],
+.form-std input[type=contact],
+.form-std select, 
+.form-std textarea{
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border: 1px solid #FFC2DC;
+	outline: none;
+	color: #F072A9;
+	padding: 5px 8px 5px 8px;
+	box-shadow: inset 1px 1px 4px #FFD5E7;
+	-moz-box-shadow: inset 1px 1px 4px #FFD5E7;
+	-webkit-box-shadow: inset 1px 1px 4px #FFD5E7;
+	background: #FFEFF6;
+	width:50%;
+}
+.form-std  input[type=submit],
+.form-std input[type=button]{
+	background: #EB3B88;
+	border: 1px solid #C94A81;
+	padding: 5px 15px 5px 15px;
+	color: #FFCBE2;
+	box-shadow: inset -1px -1px 3px #FF62A7;
+	-moz-box-shadow: inset -1px -1px 3px #FF62A7;
+	-webkit-box-shadow: inset -1px -1px 3px #FF62A7;
+	border-radius: 3px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;	
+	font-weight: bold;
+}
+.required{
+	color:red;
+	font-weight:normal;
+}
+.home-btn a[type=button]{
+	background: #EB3B88;
+	border: 1px solid #C94A81;
+	padding: 5px 15px 5px 15px;
+	color: #FFCBE2;
+	box-shadow: inset -1px -1px 3px #FF62A7;
+	-moz-box-shadow: inset -1px -1px 3px #FF62A7;
+	-webkit-box-shadow: inset -1px -1px 3px #FF62A7;
+	border-radius: 3px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;	
+	font-weight: bold;
+	text-decoration:none;
+}
+.footer{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	height:120px;
+	margin-top:5px;
+	font-size:20px;
+	font-weight:bold;
+	text-align:center;
+	padding-top:15px;
+	margin-bottom:10px;
+	box-shadow:5px 5px  #FFA0C9;
+	border-radius: 10px;
+	border: 1px solid #FFD2D2;
+	background-color:#FFE5E5;
+	color:  #F072A9;
+	background: #FFF4F4;
+
+}
+</style> 
+<body align="center">
+	<nav>
+	    <div class="logo">Coding School </div>
+	    <ul>
+		<h1>Welcome {{ session['username'] }} </h1>
+		<li><a href="home">Home</a></li>
+		<li><a href="reg">Registration</a></li>
+		<li><a href="stdlist">Student List</a></li>
+		<li><a href="about">About Us</a></li>
+		<li><a href="contact">Contact Us</a></li>
+		<li><a href="logout">Logout</a></li>
+	    </ul>
+	</nav>
+<div class="form-std">
+<form action="addStd", method="POST">
+<fieldset><legend>Personal Info</legend>
+<label><span>ID<span class="required">*</span></span><input type="number" name='id' class="input-field" value="" /></label>
+<label><span>Name <span class="required">*</span></span><input type="text" name='name'  class="input-field" value="" /></label>
+<label><span>Father Name <span class="required">*</span></span><input type="text" name='fathername' class="input-field"  value="" /></label>
+<label><span>Mother Name <span class="required">*</span></span><input type="text" name='mothername' class="input-field"  value="" /></label>
+<label><span>Course</span><select name="course" class="select-field">
+	<option value="BBA">BBA</option>
+	<option value="B.sc">B.sc</option>
+	<option value="B.A">B.A</option>
+	<option value="BCA">BCA</option>
+	<option value="B.com">B.com</option>
+	<option value="B.Tech">B.Tech</option>
+	</select></label>
+<label><span>Contact <span class="required">*</span></span><input type="contact" name='contact' class="input-field"  value="" /></label>
+<label><span>Address <span class="required">*</span></span><input type="text" name='address' class="input-field" value="" /></label>
+<label><span>Email <span class="required">*</span></span><input type="email" name='email' class="input-field"  value="" /></label>
+<label><span>Password<span class="required">*</span></span><input type="password" name='password' class="input-field" value="" /></label>
+<label><span> </span><input type="submit" value="Submit" /></label>
+</fieldset>
+<label><span> </span><a href="/home">Home</a></label>
+</form>
+</div>
+<!--- Footer Section Start --->
+<div class=" footer">
+							
+	Follow Us<br>
+	<a href="http://www.facebook.com"
+	target="_blank">
+	<img src="asset/photo/fb.jpg" width="20px" height="20px"></a>
+	<a href="https://www.instagram.com/"
+	target="_blank">
+	<img src="asset/photo/insta.jpg" width="20px" height="20px"></a>
+	<a href="https://twitter.com/"
+	target="_blank">
+	<img src="asset/photo/twitter.jpg" width="20px" height="20px"></a><br>
+	Copyright &copy; 2021| Reserved Byns<b>Coffee Leaves</b><br>
+	Designed And Developed By Jiya
+	</div>
+<!--- Footer Section End --->
+</body>
+</html>

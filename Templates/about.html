@@ -1,0 +1,414 @@
+<DOCTYPE! html>
+<html>
+	<head>	
+		<title>Student Portal</title>
+		<style>
+			*
+		{
+		margin:0;
+		padding: 0%;
+		}
+		body
+		{
+		max-width: 1200px;
+		font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+		margin:auto;
+		box-sizing: border-box;
+		display: fixed;
+		background-image: url('Templates/school.png');
+		}
+		nav
+		{
+		position: relative;
+		width: 100%;
+		height: 100px;
+		background: transparent;
+		}
+		nav .logo
+		{
+		float: left;
+		width:50px;
+		height: 50px;
+		font-size:26px;
+		text-transform: uppercase;
+		font-weight:bolder;
+		color: rgb(16, 6, 49);
+		padding:30px 0px 30px 0px;
+		}
+		nav ul
+		{
+		padding-right:40px;
+		list-style-type: none;
+		float: right;
+		margin: 7px 0px 10px 0px;
+			
+		}
+		nav ul li
+		{
+			display: inline-block;
+			
+		}
+		h1{
+			color:  #EB3B88;
+		}
+		a{
+		text-decoration: none
+		}
+		nav ul li a
+		{
+		text-decoration: none;
+		padding: 10px 40px 8px 40px ;
+		text-align: center;
+		color:  #EB3B88;
+		display: inline-block;
+		font-weight: 700;
+		text-transform: uppercase;
+		}
+		nav ul li a:hover
+		{
+		background:#F072A9;
+		color:white;
+		border-radius: 20px;
+		}
+			.about fieldset legend {
+				color: #F072A9;
+				border-top: 1px solid #FFD2D2;
+				border-left: 1px solid #FFD2D2;
+				border-right: 1px solid #FFD2D2;
+				border-radius: 5px 5px 0px 0px;
+				-webkit-border-radius: 5px 5px 0px 0px;
+				-moz-border-radius: 5px 5px 0px 0px;
+				background: #FFF4F4;
+				padding: 0px 8px 3px 8px;
+				box-shadow: -0px -1px 2px #F1F1F1;
+				-moz-box-shadow:-0px -1px 2px #F1F1F1;
+				-webkit-box-shadow:-0px -1px 2px #F1F1F1;
+				font-weight: normal;
+				font-size: 12px;
+			} 
+			.about fieldset{
+				border-radius: 10px;
+				-webkit-border-radius: 10px;
+				-moz-border-radius: 10px;
+				margin: 0px 0px 10px 0px;
+				border: 1px solid #FFD2D2;
+				padding: 20px;
+				background: #FFF4F4;
+				box-shadow: inset 0px 0px 15px #FFE5E5;
+				-moz-box-shadow: inset 0px 0px 15px #FFE5E5;
+				-webkit-box-shadow: inset 0px 0px 15px #FFE5E5;
+				color: #F072A9;
+			}
+			.mission fieldset legend {
+				color: #F072A9;
+				border-top: 1px solid #FFD2D2;
+				border-left: 1px solid #FFD2D2;
+				border-right: 1px solid #FFD2D2;
+				border-radius: 5px 5px 0px 0px;
+				-webkit-border-radius: 5px 5px 0px 0px;
+				-moz-border-radius: 5px 5px 0px 0px;
+				background: #FFF4F4;
+				padding: 0px 8px 3px 8px;
+				box-shadow: -0px -1px 2px #F1F1F1;
+				-moz-box-shadow:-0px -1px 2px #F1F1F1;
+				-webkit-box-shadow:-0px -1px 2px #F1F1F1;
+				font-weight: normal;
+				font-size: 12px;
+			} 
+			.mission fieldset{
+				border-radius: 10px;
+				-webkit-border-radius: 10px;
+				-moz-border-radius: 10px;
+				margin: 0px 0px 10px 0px;
+				border: 1px solid #FFD2D2;
+				padding: 20px;
+				background: #FFF4F4;
+				box-shadow: inset 0px 0px 15px #FFE5E5;
+				-moz-box-shadow: inset 0px 0px 15px #FFE5E5;
+				-webkit-box-shadow: inset 0px 0px 15px #FFE5E5;
+				color: #F072A9;	
+			}
+			
+			/*form css*/ 
+			.formi{
+				text-align:center;
+				color: #F072A9;
+				font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+			}
+			.form-style-3{
+				max-width: 946px;
+				font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+			}
+			.form-style-3 label{
+				display:block;
+				margin-bottom: 10px;
+			}
+			.form-style-3 label > span{
+				float: left;
+				width: 100px;
+				color: #F072A9;
+				font-weight: bold;
+				font-size: 13px;
+				text-shadow: 1px 1px 1px #fff;
+			}
+			.form-style-3 fieldset{
+				border-radius: 10px;
+				-webkit-border-radius: 10px;
+				-moz-border-radius: 10px;
+				margin: 0px 0px 10px 0px;
+				border: 1px solid #FFD2D2;
+				padding: 20px;
+				background: #FFF4F4;
+				box-shadow: inset 0px 0px 15px #FFE5E5;
+				-moz-box-shadow: inset 0px 0px 15px #FFE5E5;
+				-webkit-box-shadow: inset 0px 0px 15px #FFE5E5;
+				background-image:url('../photo/coffee.jpg');
+			}
+			.form-style-3 fieldset legend{
+				color: #FFA0C9;
+				border-top: 1px solid #FFD2D2;
+				border-left: 1px solid #FFD2D2;
+				border-right: 1px solid #FFD2D2;
+				border-radius: 5px 5px 0px 0px;
+				-webkit-border-radius: 5px 5px 0px 0px;
+				-moz-border-radius: 5px 5px 0px 0px;
+				background: #FFF4F4;
+				padding: 0px 8px 3px 8px;
+				box-shadow: -0px -1px 2px #F1F1F1;
+				-moz-box-shadow:-0px -1px 2px #F1F1F1;
+				-webkit-box-shadow:-0px -1px 2px #F1F1F1;
+				font-weight: normal;
+				font-size: 12px;
+			}
+			.form-style-3 textarea{
+				width:850px;
+				height:100px;
+			}
+			.form-style-3 input[type=text],
+			.form-style-3 input[type=date],
+			.form-style-3 input[type=datetime],
+			.form-style-3 input[type=number],
+			.form-style-3 input[type=search],
+			.form-style-3 input[type=time],
+			.form-style-3 input[type=url],
+			.form-style-3 input[type=email],
+			.form-style-3 textarea{
+				border-radius: 3px;
+				-webkit-border-radius: 3px;
+				-moz-border-radius: 3px;
+				border: 1px solid #FFC2DC;
+				outline: none;
+				color: #F072A9;
+				padding: 5px 8px 5px 8px;
+				box-shadow: inset 1px 1px 4px #FFD5E7;
+				-moz-box-shadow: inset 1px 1px 4px #FFD5E7;
+				-webkit-box-shadow: inset 1px 1px 4px #FFD5E7;
+				background: #FFEFF6;
+				width:50%;
+			}
+			.form-style-3  input[type=submit],
+			.form-style-3  input[type=button]{
+				background: #EB3B88;
+				border: 1px solid #C94A81;
+				padding: 5px 15px 5px 15px;
+				color: #FFCBE2;
+				box-shadow: inset -1px -1px 3px #FF62A7;
+				-moz-box-shadow: inset -1px -1px 3px #FF62A7;
+				-webkit-box-shadow: inset -1px -1px 3px #FF62A7;
+				border-radius: 3px;
+				border-radius: 3px;
+				-webkit-border-radius: 3px;
+				-moz-border-radius: 3px;	
+				font-weight: bold;
+			}
+			.required{
+				color:red;
+				font-weight:normal;
+			}    
+			/* Form for address*/
+			.address_form fieldset legend{
+				color: #F072A9;
+				border-top: 1px solid #FFD2D2;
+				border-left: 1px solid #FFD2D2;
+				border-right: 1px solid #FFD2D2;
+				border-radius: 5px 5px 0px 0px;
+				-webkit-border-radius: 5px 5px 0px 0px;
+				-moz-border-radius: 5px 5px 0px 0px;
+				background: #FFF4F4;
+				padding: 0px 8px 3px 8px;
+				box-shadow: -0px -1px 2px #F1F1F1;
+				-moz-box-shadow:-0px -1px 2px #F1F1F1;
+				-webkit-box-shadow:-0px -1px 2px #F1F1F1;
+				font-weight: normal;
+				font-size: 12px;
+			}
+			.address_form fieldset{
+				border-radius: 10px;
+				-webkit-border-radius: 10px;
+				-moz-border-radius: 10px;
+				margin: 0px 0px 10px 0px;
+				border: 1px solid #FFD2D2;
+				padding: 20px;
+				background: #FFF4F4;
+				box-shadow: inset 0px 0px 15px #FFE5E5;
+				-moz-box-shadow: inset 0px 0px 15px #FFE5E5;
+				-webkit-box-shadow: inset 0px 0px 15px #FFE5E5;
+				color: #F072A9;
+			}
+			.home-section{
+				min-height: 100vh;
+				padding: 80px 0 80px;
+				}
+				.home-section .home-bg{
+				position: absolute;
+				right: 0;
+				top: 0;
+				height: 100%;
+				width: 100%;
+				z-index: -2;
+				}
+				.home-section .min-vh-100{
+				padding: 100px 0;
+				}
+				.home-text{
+				padding: 0 15px;
+				max-width: 700px;
+				width: 100%;
+				margin: auto;
+				text-align: center;
+				}
+				.home-text h2{
+					font-size: 50px;
+					line-height: 80px;
+					margin: 0 0 5px;
+					}
+					.home-text p{
+					margin: 0 0 30px;
+					}
+					.btn{
+					display: inline-block;
+					padding: 10px 30px;
+					color: #EB3B88;
+					background-color: transparent;
+					border-radius: 30px;
+					font-weight: 900;
+					transition: all 0.3s ease;
+					font-size: 16px;
+					cursor: pointer;
+					user-select: none;
+					line-height: 1.5;
+					font-family: 'Recursive', sans-serif;
+					}
+					.btn-default{
+					border: 2px solid #C94A81;
+					}
+					.btn-default:hover{
+					color: white;
+					background-color: #F072A9;
+					}
+					.footer{
+						font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+						height:120px;
+						margin-top:5px;
+						font-size:20px;
+						font-weight:bold;
+						text-align:center;
+						padding-top:15px;
+						margin-bottom:10px;
+						box-shadow:5px 5px  #FFA0C9;
+						border-radius: 10px;
+						border: 1px solid #FFD2D2;
+						background-color:#FFE5E5;
+						color:  #F072A9;
+						background: #FFF4F4;
+					
+					}
+		</style>
+	</head>
+		<body>
+			<div class="container_12 box">
+				<!--- Menu Start --->
+				<nav>
+					<div class="logo">Coding School </div>
+					<ul>
+					<h1>Welcome {{ session['username'] }} </h1>
+					<li><a href="home">Home</a></li>
+					<li><a href="reg">Registration</a></li>
+					<li><a href="stdlist">Student List</a></li>
+					<li><a href="about">About Us</a></li>
+					<li><a href="contact">Contact Us</a></li>
+					<li><a href="logout">Logout</a></li>
+					</ul>
+				</nav>
+			
+				<!--- Menu End --->
+				<section class="home-section section ">
+					<div class="home-bg" style="background-image: url(Templates/asset/img/school.png);"></div>
+					<div class="container">
+						<div class="row min-vh-100 align-items-center">
+							<div class="home-text">
+						<div class="about" height="500px" width="946px">
+						<fieldset>
+						<legend>About Programming Language</legend>
+						<label for="field1">
+						<label for="field1"><span>
+						<p>A programming language is a formal language comprising a set of strings that produce various kinds of machine code output. Programming languages are one kind of computer language, and are used in computer programming to implement algorithms.
+							Most programming languages consist of instructions for computers. There are programmable machines that use a set of specific instructions, rather than general programming languages. Since the early 1800s, programs have been used to direct the behavior of machines such as Jacquard looms, music boxes and player pianos.[1] The programs for these machines (such as a player piano's scrolls) did not produce different behavior in response to different inputs or conditions.</p>
+							
+						</p><span class="required"></span></span>
+						</label>
+						</label>
+						</fieldset>
+						
+						</div>
+					
+						<div class="grid_3 mission" height="500px" width="946px">
+						<fieldset>
+						<legend>Vision</legend>
+						<label for="field1">
+						<label for="field1"><p>Computer vision experts recommend Python for the following reasons:
+							Easy to Use: Python is easy to learn, especially for beginners. It is one of the first programming languages learnt by most users. This language is also easily adaptable for all kinds of programming needs.
+							Most Used computing language: Python offers a complete learning environment for people who want to use it for various kinds of Computer Vision and Machine Learning experiments. Its numpy, scikit-learn, matplotlib and OpenCV provides an exhaustive resource for any computer vision applications.</p><span> 
+						<span class="required"></span></span>
+						</label>
+						</label>
+						</fieldset>
+						</div>
+						<div class="grid_3 mission" height="500px" width="946px">
+						<fieldset>
+						<legend>Mission</legend>
+						<label for="field2">
+						<label for="field2"><span>
+						<p>The mission of the Python Software Foundation is to promote, protect, and advance the Python programming language, and to support and facilitate the growth of a diverse and international community of Python programmers.<span class="required"></span></span>
+						</label>
+						</label>
+						</fieldset>
+						</div>
+						<div class="grid_12">
+							<a href="contact.html" class="btn btn-default">Click For More </a>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</section>
+						
+						<!--- Footer Section Start --->
+							<div class=" footer">
+							
+							Follow Us<br>
+							<a href="http://www.facebook.com"
+							target="_blank">
+							<img src="asset/photo/fb.jpg" width="20px" height="20px"></a>
+							<a href="https://www.instagram.com/"
+							target="_blank">
+							<img src="asset/photo/insta.jpg" width="20px" height="20px"></a>
+							<a href="https://twitter.com/"
+							target="_blank">
+							<img src="asset/photo/twitter.jpg" width="20px" height="20px"></a><br>
+							Copyright &copy; 2021| Reserved Byns<b>Coffee Leaves</b><br>
+							Designed And Developed By Jiya
+							</div>
+						<!--- Footer Section End --->
+				</div>
+		</body>
+</html>		
